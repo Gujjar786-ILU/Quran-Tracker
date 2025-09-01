@@ -1,0 +1,36 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "qurantrackerapp-efd21",
+          "appId": "1:734967310596:android:e998f66f4298b57c664851",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "qurantrackerapp-efd21",
+          "configurations": {
+            "android": "1:734967310596:android:e998f66f4298b57c664851"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions/missed_alerts2",
+      "codebase": "missed_alerts2",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": []
+
+    }
+  ]
+}

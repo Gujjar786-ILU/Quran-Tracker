@@ -1,0 +1,61 @@
+name: quran_tracker
+description: "A mobile app to track Quran progress with Hijri support, notifications, and admin tools."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # ✅ Firebase Core & Services
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.4
+  firebase_messaging: ^14.7.9
+
+  # ✅ Notifications
+  flutter_local_notifications: ^17.1.0
+
+  # ✅ Date formatting & HTTP
+  intl: ^0.20.2
+  http: ^1.2.1
+
+  # ✅ Searchable Dropdowns
+  dropdown_search: ^5.0.6
+
+  # ✅ Localization
+  flutter_localizations:
+    sdk: flutter
+  easy_localization: ^3.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/lang/
+
+  # Optional: Urdu font
+  # fonts:
+  #   - family: NotoNastaliqUrdu
+  #     fonts:
+  #       - asset: assets/fonts/NotoNastaliqUrdu-Regular.ttf
+
+# ✅ This must be OUTSIDE of `flutter:`!
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  remove_alpha_banner: true
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon/icon.png"
